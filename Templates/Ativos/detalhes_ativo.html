@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block subtitulo %}
+Detalhes do Ativo {{ ativo }}
+{% endblock %}
+
+
+{% block conteudo %}
+
+Nome: {{ ativo.nome }} <br>
+Descrição: {{ ativo.descricao }} <br>
+Fornecedor: {{ ativo.fornecedor }} <br>
+Valor de Compra: {{ ativo.valor_compra }} <br>
+Quantidade: {{ ativo.qtd }} <br>
+Plaqueta: {{ ativo.plaqueta }} <br>
+
+{% endblock %}

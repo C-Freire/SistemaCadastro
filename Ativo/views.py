@@ -12,7 +12,7 @@ def detalhes_ativo(request, pk):
     ativo = Ativo.objects.filter(id=pk)[0]
     
     informacoes = {
-        'detalhe_ativo':ativo
+        'detalhes_ativo':ativo
     }
     
-    return render(request, 'ativo/detalhe_ativo.html', informacoes)
+    return render(request, 'ativo/detalhes_ativo.html', informacoes)
