@@ -8,13 +8,15 @@ Lista de Ativos
 {% block conteudo %}
 
 {% for ativo in ativos%}
-{{ ativo }}<br>
+<dl> {{ ativo }} 
+<a class="btn btn-outline-info" href="{% url 'ativos:detalhes_ativo' pk=ativo.id %}">detalhes</a>
+</dl>
 {% endfor %}
 
 {% endblock %}
 
 
 {% block rodape %}
-Controle de Ativos
+Sistema de Controle de Ativos
 {% endblock %}
 

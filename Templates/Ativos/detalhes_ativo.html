@@ -1,17 +1,24 @@
 {% extends "base.html" %}
 
 {% block subtitulo %}
-Detalhes do Ativo {{ ativo }}
+Detalhes do Ativo {{ detalhes_ativo.nome }}
 {% endblock %}
 
 
 {% block conteudo %}
 
-Nome: {{ ativo.nome }} <br>
-Descrição: {{ ativo.descricao }} <br>
-Fornecedor: {{ ativo.fornecedor }} <br>
-Valor de Compra: {{ ativo.valor_compra }} <br>
-Quantidade: {{ ativo.qtd }} <br>
-Plaqueta: {{ ativo.plaqueta }} <br>
+    Nome: {{ detalhes_ativo.nome }} <br>
+    Descrição: {{ detalhes_ativo.descricao }} <br>
+    Fornecedor: {{ detalhes_ativo.fornecedor }} <br>
+    Valor de Compra: R$ {{ detalhes_ativo.valor_compra }} <br>
+    Quantidade: {{ detalhes_ativo.qtd }} <br>
+    Plaqueta: {{ detalhes_ativo.plaqueta }} <br>
 
+{% endblock %}
+
+
+{% block rodape %}
+<br>
+<br>
+Sistema de Controle de Ativos
 {% endblock %}
